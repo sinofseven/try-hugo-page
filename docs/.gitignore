@@ -2,7 +2,6 @@
 ### https://raw.github.com/github/gitignore/e5323759e387ba347a9d50f8b0ddd16502eb71d4/community/Golang/Hugo.gitignore
 
 # Generated files by hugo
-/public/
 /resources/_gen/
 /assets/jsconfig.json
 hugo_stats.json
