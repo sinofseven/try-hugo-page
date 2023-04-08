@@ -1,0 +1,26 @@
+name: deploy-page
+
+on:
+  push:
+
+
+jobs:
+  deploy:
+    runs-on: ubuntu-22.04
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodule: true
+      - uses: peaceiris/actions-hugo@v2
+        with:
+          extended: true
+      - run: |
+          cd docs
+          hugo --minify
+      - uses: actions/upload-pages-artifact@v1
+        with:
+          path: docs/public/
+      - uses: actions/upload-pages-artifact@v1
