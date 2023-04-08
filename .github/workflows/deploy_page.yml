@@ -18,10 +18,10 @@ jobs:
         with:
           extended: true
       - run: |
-          cd docs
+          cd hugo
           hugo --minify
           find public | sort
       - uses: actions/upload-pages-artifact@v1
         with:
-          path: docs/public/
+          path: hugo/public/
       - uses: actions/deploy-pages@v1
