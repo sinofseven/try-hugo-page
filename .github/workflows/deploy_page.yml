@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          submodule: true
+          submodules: true
       - uses: peaceiris/actions-hugo@v2
         with:
           extended: true
