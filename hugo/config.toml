@@ -3,4 +3,9 @@ languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'hugo-book'
 
-disableKinds = ["RSS"]
+enableGitInfo = true
+
+[params]
+BookTheme = 'auto'
+BookRepo = 'https://github.com/sinofseven/try-hugo-page'
+BookSearch = false
